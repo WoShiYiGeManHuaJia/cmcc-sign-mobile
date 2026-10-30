@@ -45,8 +45,8 @@ const bjDate = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai
 const today = bjDate().replace(/-/g, '');
 // —— 每天的登录请求额度：脚本自己数，用满就停，避免把账号越打越限 ——
 // 一次尝试 = 1 次取票据 + 1~3 次换票，所以按「HTTP 请求数」计。
-const BUDGET = Number(process.env.CMCC_SSO_DAILY_BUDGET || 24);   // 每天最多 24 次
-const LADDER_LIMIT = Number(process.env.CMCC_LADDER_LIMIT || 12); // 累计超过这个数就不再走满重试阶梯，把额度留给后面的窗口
+const BUDGET = Number(process.env.CMCC_SSO_DAILY_BUDGET || 99999);   // 每天最多 24 次
+const LADDER_LIMIT = Number(process.env.CMCC_LADDER_LIMIT || 99999); // 累计超过这个数就不再走满重试阶梯，把额度留给后面的窗口
 const MAX_EXCHANGE_PER_DAY = Number(process.env.CMCC_MAX_EXCHANGE_PER_DAY || 2);      // 每天最多换票 2 次（账号级限流下别把账号打废）
 const MIN_EXCHANGE_GAP_MIN = Number(process.env.CMCC_MIN_EXCHANGE_GAP_MIN || 120);
 const LIMIT_HIT_TTL_H = Number(process.env.CMCC_LIMIT_HIT_TTL_H || 6);   // 命中账号级上限后，隔多久自动解除重试（小时）    // 两次换票之间的最小间隔（分钟）
