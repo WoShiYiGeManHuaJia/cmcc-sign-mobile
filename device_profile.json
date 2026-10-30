@@ -1,0 +1,51 @@
+{
+  "_comment": "中国移动 App 通道设备档案（来自用户本人手机 App 的一次正常请求，已预置，运行时无需再抓包）",
+  "host": "apm.app.coc.10086.cn",
+  "probe_hosts": [
+    "apm.app.coc.10086.cn",
+    "client.app.coc.10086.cn",
+    "clientaccess.10086.cn"
+  ],
+  "sign_salt": "_Leadeon/SecurityOrganization",
+  "ua": "okhttp/3.14.9 ChinaMobile/12.5.5 (Linux; Android 16; 23117RK66C)",
+  "qen": 14,
+  "phone": "17274079953",
+  "province_code": "731",
+  "city_code": "1731",
+  "paths": {
+    "send_code": "/biz-orange/LN/uamrandcode/sendMsgLogin",
+    "code_login": "/biz-orange/LN/uamrandcodelogin/threenetworklogin",
+    "auto_login": "/biz-orange/LN/uamrandcodelogin/autoLogin"
+  },
+  "device": {
+    "ak": "F4AA34B88513F0D087CA0EF11A3277469DC74905",
+    "cid": "Ac3elAP8ZcjTQUlgJ5CVF43s6qbVWEuilLiVk/prrW9D++ubLhsv2WFE4295/9HKNv+rMuPngZwAT50UefSLFQ==",
+    "city": "1731",
+    "ctid": "Ac3elAP8ZcjTQUlgJ5CVF43s6qbVWEuilLiVk/prrW9D++ubLhsv2WFE4295/9HKNv+rMuPngZwAT50UefSLFQ==",
+    "cv": "12.5.5",
+    "en": "0",
+    "imei": "oaid:f85a11b65fb339a1",
+    "nt": "5",
+    "packageName": "com.greenpoint.android.mc10086.activity",
+    "prov": "731",
+    "sb": "Redmi",
+    "sn": "23117RK66C",
+    "sp": "1440x3062",
+    "st": "1",
+    "sv": "16",
+    "t": "f44300676069ad4498a320ed7fbb1882",
+    "xc": "A2081",
+    "xk": "f32b0e916e5e55fddcc9f8bf00c369b4968a048f4e269002accf591af56d2833f78c94ef",
+    "reqBody": {
+      "cityCode": "1731",
+      "provinceCode": "731"
+    }
+  },
+  "_verified": {
+    "来源": "2026-10-30 真实手机 App 抓包 logOpenEndCapability",
+    "KEY_14_IV_14": "✓ 解密成功 → 加密协议未变",
+    "KEY_2_IV_2_x-token": "✓ 解密明文与 xk_path_time_nonce 完全一致 → xk 正确",
+    "xs": "✗ 脚本实现与抓包不符（算法待定，不影响已验证项）",
+    "注意": "抓包路径为 /biz-orange/DN/...，档案内 paths 为 /biz-orange/LN/...，前缀差异需留意"
+  }
+}
